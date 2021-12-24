@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<!-- ↓タイムリーフ（viewとしてHTMLを扱うためのテンプレートエンジン -->
 
+<!-- ↓タイムリーフ（viewとしてHTMLを扱うためのテンプレートエンジン -->
+<!-- javaファイルを使用するための呪文 -->
 <html xmlns:th="http://www.thymeleaf.org">
 
+
 <head>
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+  <%!
+   public static hello() {
+     System.out.println("Hello, World");
+   %>
+
+  <p>
+    <
+    % hello(); %>
+  </p>
 
 </body>
 </html>
